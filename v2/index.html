@@ -1,0 +1,102 @@
+<!-- IDEA LLMO Dashboard — ランディング -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+<meta name="googlebot" content="noindex,nofollow,noarchive,noimageindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%230017c1%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-size=%2716%27 font-family=%27sans-serif%27 font-weight=%27700%27 fill=%27%23fff%27 text-anchor=%27middle%27%3EA%3C/text%3E%3C/svg%3E">
+<title>IDEA LLMO Dashboard</title>
+<style>
+:root{--ink:#1b1f2a;--ink2:#4a5262;--ink3:#8b93a3;--line:#e3e6ec;--bg:#f6f7f9;--blue:#0017c1;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,system-ui,-apple-system,sans-serif;
+     background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:56px 24px 80px}
+.eyebrow{font-size:11px;letter-spacing:.14em;color:var(--ink3);font-weight:700;margin-bottom:10px}
+h1{font-size:26px;line-height:1.45;margin:0 0 10px;letter-spacing:.01em}
+h1 .sep{color:var(--ink3);font-weight:400}
+.lead{font-size:13.5px;line-height:1.95;color:var(--ink2);margin:0 0 34px;max-width:760px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:720px){.grid{grid-template-columns:1fr}.wrap{padding:36px 18px 60px}h1{font-size:21px}}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px 24px 22px;
+       text-decoration:none;color:inherit;transition:box-shadow .18s,transform .18s,border-color .18s}
+a.card:hover{box-shadow:0 8px 26px rgba(20,30,60,.10);transform:translateY(-2px);border-color:#c9d2e6}
+.num{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.1em;color:var(--blue);
+     background:#eef0ff;border-radius:3px;padding:3px 8px;margin-bottom:12px}
+.ct{font-size:17px;font-weight:700;margin:0 0 8px}
+.cd{font-size:12.5px;line-height:1.9;color:var(--ink2);margin:0 0 14px}
+.cl{font-size:11.5px;line-height:1.85;color:var(--ink3);margin:0;padding-left:1em}
+.cl li{margin-bottom:2px}
+.go{margin-top:16px;font-size:12px;font-weight:700;color:var(--blue)}
+.meta{margin-top:36px;border-top:1px solid var(--line);padding-top:20px;font-size:11.5px;line-height:2;color:var(--ink3)}
+.meta b{color:var(--ink2)}
+.warn{margin-top:20px;background:#fff8ef;border:1px solid #f0d9b8;border-left:4px solid #e8a33d;border-radius:6px;
+      padding:12px 16px;font-size:11.5px;line-height:1.95;color:#7a4d00}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">IDEATECH / IDEA LLMO</div>
+  <h1>IDEA LLMO Dashboard<br><span class="sep">Monitoring / Strategy / 詳細レポート</span></h1>
+  <p class="lead">
+    株式会社IDEATECH の BtoB 特化 LLMO 支援サービス「IDEA LLMO」（<a href="https://ideatech.jp/service/idea-llmo/" style="color:inherit">ideatech.jp/service/idea-llmo/</a>）が、生成AI
+    （ChatGPT・Gemini・Copilot・Perplexity・Claude）にどう認識され、どう推薦されているかを可視化し、推薦されるための施策に落とすための自社ダッシュボードと詳細レポートです。
+    データは Ahrefs Brand Radar「【Monitoring / Strategy】IDEATECH（IDEA LLMO）」（2026年6〜10月の月次スナップショット）・応答ログの引用リンク・GA4・HubSpot・Search Console に基づきます。
+  </p>
+  <div class="grid">
+    <a class="card" href="./monitoring/">
+      <span class="num">MONITORING</span>
+      <p class="ct">Dashboard / Monitoring</p>
+      <p class="cd">「いま、どうなっているか」の定点観測。毎週（流入・CV）／毎月（推奨状況）更新します。</p>
+      <ul class="cl">
+        <li>★ 更新サマリ（前月との差分／推奨状況の変遷 6月→10月）</li>
+        <li>① 基礎診断（20項目・ideatech.jp／評点定義）</li>
+        <li>② 結果指標（IDEA LLMO 関連ページの流入／関連フォームの CV・営業除外）</li>
+        <li>③-1 指名10プロンプト × 5LLM</li>
+        <li>③-2・③-3 非指名67プロンプト（一般40＋ペルソナ27）× 5LLM × 6社比較</li>
+        <li>③-4 LLMサイト引用状況／③-5 共起語マップ</li>
+        <li>④ サイテーション（IDEA LLMO／IDEATECH）／⑤ AI TOPICS</li>
+      </ul>
+      <div class="go">開く →</div>
+    </a>
+    <a class="card" href="./strategy/">
+      <span class="num">STRATEGY</span>
+      <p class="ct">Dashboard / Strategy</p>
+      <p class="cd">「どうすれば推薦されるか」のペルソナ別戦略。</p>
+      <ul class="cl">
+        <li>① ペルソナA：BtoB SaaS マーケ責任者 / LLMO支援会社探し</li>
+        <li>② ペルソナB：BtoB メーカー マーケ担当 / サイテーション支援探し</li>
+        <li>③ ペルソナC：BtoB コンサル マーケ担当 / 外注で失敗経験者</li>
+        <li>各ペルソナ：強みの言語化とRTB／LLMの推薦基準と推薦企業（10月更新）／AI認知マッピング／施策リスト／ボイラープレート</li>
+        <li>④ IDEAナレッジ（施策実施スケジュール／主要AIニュース／実施施策／IDEAコンサルティング）</li>
+      </ul>
+      <div class="go">開く →</div>
+    </a>
+  </div>
+  <a class="card" href="./report/" style="margin-top:18px">
+    <span class="num">REPORT</span>
+    <p class="ct">IDEA LLMO 詳細レポート（2026年10月度・全42ページ・A4縦）</p>
+    <p class="cd">ダッシュボード上の数値の根拠・解釈・打ち手を、章をまたいだ因果として整理した報告書。ブラウザでめくって読めます。</p>
+    <ul class="cl">
+      <li>01 エグゼクティブサマリ／02 調査設計</li>
+      <li>03 指名プロンプト／04 非指名プロンプトと競合ポジション／05 推奨状況の変遷</li>
+      <li>06 ペルソナ別分析／07 LLMサイト引用状況／08 共起語マップ</li>
+      <li>09 流入・コンバージョン／10 課題構造と打ち手／11 KPIと運用設計／12 付録</li>
+    </ul>
+    <div class="go">開く →</div>
+  </a>
+  <div class="warn">
+    <b>本ダッシュボードはパスワード保護（AES-256-GCM 暗号化）＋ 検索エンジン除外（noindex ＋ robots.txt）で運用しています。</b>
+    競合比較および戦略情報を含むため、URLとパスワードをご存じの方のみが閲覧できる状態です。同一ブラウザのセッション中は再入力なしで各ページを行き来できます。
+  </div>
+  <div class="meta">
+    <b>調査日</b>　2026-10-18（Ahrefs Brand Radar 10月応答：10/11〜10/12 取得）<br>
+    <b>競合</b>　ナイル／Faber Company／CINC／イノーバ／Queue（Ahrefs Brand Radar の競合設定）<br>
+    <b>更新</b>　毎週：GA4・HubSpot（流入・CV）／毎月：Ahrefs Brand Radar（推奨状況・引用・共起語）<br>
+    <b>注記</b>　10月は Perplexity の応答の多くが Ahrefs 側で未取得のため「取得中」表示。Claude は2026年10月から計測
+  </div>
+</div>
+</body>
+</html>
