@@ -43,7 +43,7 @@ a.card:hover{box-shadow:0 8px 26px rgba(20,30,60,.10);transform:translateY(-2px)
   <p class="lead">
     株式会社IDEATECH の BtoB 特化 LLMO 支援サービス「IDEA LLMO」（<a href="https://ideatech.jp/service/idea-llmo/" style="color:inherit">ideatech.jp/service/idea-llmo/</a>）が、生成AI
     （ChatGPT・Gemini・Copilot・Perplexity・Claude）にどう認識され、どう推薦されているかを可視化し、推薦されるための施策に落とすための自社ダッシュボードと詳細レポートです。
-    データは Ahrefs Brand Radar「【Monitoring / Strategy】IDEATECH（IDEA LLMO）」（2026年6〜10月の月次スナップショット）・応答ログの引用リンク・GA4・HubSpot・Search Console に基づきます。
+    データは Ahrefs Brand Radar「V2【Monitoring / Strategy】IDEATECH（IDEA LLMO）」（2026年10月20日にプロンプトを全面刷新。設計書「ペルソナ×AI認知マッピング v1」準拠）・応答ログの引用リンク・GA4・HubSpot・Search Console に基づきます。
   </p>
   <div class="grid">
     <a class="card" href="./monitoring/">
@@ -51,11 +51,11 @@ a.card:hover{box-shadow:0 8px 26px rgba(20,30,60,.10);transform:translateY(-2px)
       <p class="ct">Dashboard / Monitoring</p>
       <p class="cd">「いま、どうなっているか」の定点観測。毎週（流入・CV）／毎月（推奨状況）更新します。</p>
       <ul class="cl">
-        <li>★ 更新サマリ（前月との差分／推奨状況の変遷 6月→10月）</li>
+        <li>★ 更新サマリ（前月との差分／推奨状況の変遷：2026-10 は V2 基準線）</li>
         <li>① 基礎診断（20項目・ideatech.jp／評点定義）</li>
         <li>② 結果指標（IDEA LLMO 関連ページの流入／関連フォームの CV・営業除外）</li>
-        <li>③-1 指名10プロンプト × 5LLM</li>
-        <li>③-2・③-3 非指名67プロンプト（一般40＋ペルソナ27）× 5LLM × 6社比較</li>
+        <li>③-1 指名10プロンプト × 5LLM（正確性の判定つき）</li>
+        <li>③-2・③-3 非指名40プロンプト × 5LLM × 6グループ比較（表A：社名が挙がる問い／表B：選定基準 K1〜K5）</li>
         <li>③-4 LLMサイト引用状況／③-5 共起語マップ</li>
         <li>④ サイテーション（IDEA LLMO／IDEATECH）／⑤ AI TOPICS</li>
       </ul>
@@ -66,10 +66,10 @@ a.card:hover{box-shadow:0 8px 26px rgba(20,30,60,.10);transform:translateY(-2px)
       <p class="ct">Dashboard / Strategy</p>
       <p class="cd">「どうすれば推薦されるか」のペルソナ別戦略。</p>
       <ul class="cl">
-        <li>① ペルソナA：BtoB SaaS マーケ責任者 / LLMO支援会社探し</li>
-        <li>② ペルソナB：BtoB メーカー マーケ担当 / サイテーション支援探し</li>
-        <li>③ ペルソナC：BtoB コンサル マーケ担当 / 外注で失敗経験者</li>
-        <li>各ペルソナ：強みの言語化とRTB／LLMの推薦基準と推薦企業／AI認知マッピング（10月更新）</li>
+        <li>① ペルソナA：ITベンダー・SIer 事業部マーケ責任者 / AIに競合ばかり推奨される</li>
+        <li>② ペルソナB：IT企業 全社マーケ部長・CMO / 成果を経営に説明できない</li>
+        <li>③ ペルソナC：エンタープライズITサービス マーケ企画責任者 / 誰に何を語るかから再設計</li>
+        <li>各ペルソナ：強みの言語化とRTB／LLMの推薦基準と推薦企業（K1〜K5）／AI認知マッピング（V2 初回計測で確定）</li>
         <li>④ 施策リスト60件（PR／ルールメイク・調査企画／コンテンツ・レポート企画〈コラム原案ジェネレータ12本〉／RTB強化・ボイラープレート改善／LP・サイト改善）</li>
         <li>⑤ IDEAナレッジ（施策の振り返り／IDEAコンサルティング／施策実施スケジュール）</li>
       </ul>
@@ -78,13 +78,13 @@ a.card:hover{box-shadow:0 8px 26px rgba(20,30,60,.10);transform:translateY(-2px)
   </div>
   <a class="card" href="./report/" style="margin-top:18px">
     <span class="num">REPORT</span>
-    <p class="ct">IDEA LLMO 詳細レポート（2026年10月度・全42ページ・A4縦）</p>
-    <p class="cd">ダッシュボード上の数値の根拠・解釈・打ち手を、章をまたいだ因果として整理した報告書。ブラウザでめくって読めます。</p>
+    <p class="ct">IDEA LLMO Intelligence Report（2026-10 ver・V2 基準線・全41ページ・A4縦）</p>
+    <p class="cd">ダッシュボード上の数値の根拠と解釈を、章をまたいだ因果として整理した報告書（打ち手は Strategy ④⑤ が正本）。ブラウザでめくって読めます。</p>
     <ul class="cl">
-      <li>01 エグゼクティブサマリ／02 調査設計</li>
-      <li>03 指名プロンプト／04 非指名プロンプトと競合ポジション／05 推奨状況の変遷</li>
-      <li>06 ペルソナ別分析／07 LLMサイト引用状況／08 共起語マップ</li>
-      <li>09 流入・コンバージョン／10 課題構造と打ち手／11 KPIと運用設計／12 付録</li>
+      <li>01 エグゼクティブサマリ／02 調査設計と対象データ</li>
+      <li>03 指名プロンプト／04 非指名（表A）と競合ポジション／05 非指名（表B）と選定基準 K1〜K5</li>
+      <li>06 ペルソナ別分析／07 LLMサイト引用状況／08 共起語マップ／09 流入・コンバージョン</li>
+      <li>10 推奨状況の推移と V2 基準線／11 AI認知マッピングの確定／12 付録</li>
     </ul>
     <div class="go">開く →</div>
   </a>
@@ -93,10 +93,10 @@ a.card:hover{box-shadow:0 8px 26px rgba(20,30,60,.10);transform:translateY(-2px)
     競合比較および戦略情報を含むため、URLとパスワードをご存じの方のみが閲覧できる状態です。同一ブラウザのセッション中は再入力なしで各ページを行き来できます。
   </div>
   <div class="meta">
-    <b>調査日</b>　2026-10-18（Ahrefs Brand Radar 10月応答：10/11〜10/12 取得）<br>
-    <b>競合</b>　ナイル／Faber Company／CINC／イノーバ／Queue（Ahrefs Brand Radar の競合設定）<br>
+    <b>調査日</b>　2026-10-20（Ahrefs Brand Radar V2 応答取得）<br>
+    <b>競合</b>　応答本文から6グループで自動検出（LLMO・SEO支援会社／大手代理店・PR会社／調査会社・PR配信／BtoBマーケ支援／可視化ツール）<br>
     <b>更新</b>　毎週：GA4・HubSpot（流入・CV）／毎月：Ahrefs Brand Radar（推奨状況・引用・共起語）<br>
-    <b>注記</b>　10月は Perplexity の応答の多くが Ahrefs 側で未取得のため「取得中」表示。Claude は2026年10月から計測
+    <b>注記</b>　V2 レポートの Perplexity 応答は Ahrefs 側で未取得のため「取得中」表示（ChatGPT・Gemini・Copilot・Claude の4LLMで集計）。旧プロンプト（V1）との前月比較は行わず、2026年11月から V2 同士で比較
   </div>
 </div>
 </body>
